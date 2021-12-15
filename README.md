@@ -8,4 +8,4 @@ Valida horários, não permitindo sobreposição de períodos.
 
 Requisições e respostas no formato JSON
 
-- [Registro de Ponto](./documentation/Point)
+- [Registro de Ponto](documentation/point.md)
