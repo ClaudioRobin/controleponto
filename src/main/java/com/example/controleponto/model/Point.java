@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 public class Point {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(nullable = true)
@@ -23,11 +23,18 @@ public class Point {
     @Column(nullable = false)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm")
     private LocalDateTime dateTime;
-    
+
     @Column(nullable = false)
     private Boolean isEntry;
 
     public Point() {
+    }
+
+    public Point(long id, String note, LocalDateTime dateTime, Boolean isEntry) {
+        this.id = id;
+        this.note = note;
+        this.dateTime = dateTime;
+        this.isEntry = isEntry;
     }
 
     public long getId() {
