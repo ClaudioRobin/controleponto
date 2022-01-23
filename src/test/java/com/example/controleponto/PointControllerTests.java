@@ -27,7 +27,6 @@ public class PointControllerTests {
 		JSONObject jsonRequest = new JSONObject();
 		jsonRequest.put("dateTime", "2021-12-18 13:12");
 		jsonRequest.put("note", "Início do expediente");
-		jsonRequest.put("isEntry", true);
 
 		JSONObject jsonResponse = new JSONObject();
 		jsonResponse.put("id", 1);

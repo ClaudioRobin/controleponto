@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(PointController.URL)
 public class PointController {
 
-    public static final String URL = "/point"; 
+    public static final String URL = "/api/point"; 
 
     @Autowired
     private PointRepository pointRepository;
